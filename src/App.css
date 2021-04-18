@@ -14,20 +14,68 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #dfdfdf;
+  min-height:100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding-left: 14vw;
+  padding-right: 2vw;
+  padding-top: 0vh;
   color: white;
 }
 
 .App-link {
   color: #61dafb;
 }
+.sidenav {
+  height: 100%;
+  width: 15vw;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #0b5369;
+  overflow-x: hidden;
+  padding-top: 1rem;
+  text-align: right;
+}
+.sidenav button{
+  padding: 0.365rem 0.365rem 0.365rem 1rem;
+  text-decoration: none;
+  font-size: 1rem;
+  border: 0px;
+  color: #ffffff;
+  margin: 0.325rem;
+  background-color: #0b5369;
+  transition: 0.3s;
+ 
+}
+.sidenav p{
+  padding: 0.365rem 0.365rem 0.365rem 1rem;
+  text-decoration: none;
+  font-size: 2rem;
+  border: 0px;
+  color: #ffffff;
+  margin: 0.325rem;
+  background-color: #0b5369;
+  transition: 0.3s;
+ 
+}
 
+.sidenav button:hover {
+  color: white;
+  background-color: black;
+}
+
+.main {
+  margin-left: 2rem; /* Same as the width of the sidenav */
+  font-size: 0.625rem; /* Increased text to enable scrolling */
+  padding: 0px 0.325rem;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 1rem;}
+  .sidenav button {font-size: 1rem;}
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
